@@ -164,63 +164,8 @@ data=[100]
 packet = ''
 preamble = '~~'
 
-
-
-
-while True:
-    if sys.version_info[0] == 2:
-        request = raw_input('> ')
-    else:
-        request = input('> ')
-    if request == 'q':
-        print('exiting')
-        break
-    
-    #testing code
-    if request == 't':
-        request = 'create input num test'
-        request = request.rstrip()
-        if request != "":
-            packet = encode_request(request)
-
-        if packet != None:
-            s0 = ord(packet[2])
-            s1 = ord(packet[3])
-            prestr = 'Sending: ' + packet[0] + packet[1] + str(s0) + str(s1)
-            print((prestr + packet[4:75] + '..') if len(packet) > 75  else (prestr + packet[4:]))
-
-			# Wake up the WP UART with a preamble of 0x7E bytes
-            s.write(preamble.encode())
-            sleep(0.1)
-            s.write(preamble.encode())
-
-            h.sendFrame(packet.encode())
-            sleep(0.5)
-            
-        random_value=str(random.randint(1,1000))
-        request = 'push num test 0 %s' % (random_value)
-        request = request.rstrip()
-        if request != "":
-            packet = encode_request(request)
-
-        if packet != None:
-            s0 = ord(packet[2])
-            s1 = ord(packet[3])
-            prestr = 'Sending: ' + packet[0] + packet[1] + str(s0) + str(s1)
-            print((prestr + packet[4:75] + '..') if len(packet) > 75  else (prestr + packet[4:]))
-
-			# Wake up the WP UART with a preamble of 0x7E bytes
-            s.write(preamble.encode())
-            sleep(0.1)
-            s.write(preamble.encode())
-
-            h.sendFrame(packet.encode())
-            sleep(0.5)
-            break
-
-	# remove trailing whitespace
-    request = request.rstrip()
-    if request != "":
+def encoding_to_packet(request):
+      if request != "":
         packet = encode_request(request)
 
         if packet != None:
@@ -236,6 +181,29 @@ while True:
 
             h.sendFrame(packet.encode())
             sleep(0.5)
+               
+while True:
+    if sys.version_info[0] == 2:
+        request = raw_input('> ')
+    else:
+        request = input('> ')
+    if request == 'q':
+        print('exiting')
+        break
+    
+    #testing code
+    if request == 't':
+        request = 'create input str test'
+        request = request.rstrip()
+        encoding_to_packet(request)
+            
+        random_value=str(random.randint(1,1000))
+        request = 'push str test 0 %s' % (random_value)
+        encoding_to_packet(request)
+        break
+
+	# remove trailing whitespace
+    encoding_to_packet(request)
 
 sleep(0.5)
 s.close
