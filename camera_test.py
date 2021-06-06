@@ -21,3 +21,27 @@ camera.stop_preview()
 # sleep(10)
 # camera.stop_recording('/home/pi/Desktop/video.h264')
 # camera.stop_preview()
+
+#import cv2
+#import base64
+
+#starting to capture the video from port 0
+cap= cv2.VideoCapture(0)
+
+#return value(retval) = true, if image is captured. Captured image will be saved as "image"
+retval, image = cap.read()
+
+#stop capturing the video
+cap.release()
+
+#Convert captured image to JPG(binary file)
+retval, buffer = cv2.imencode('.jpg', image)
+
+#convert to base64 encoding and show start first 80 data
+jpg_as_text = base64.b64encode(buffer)
+print(jpg_as_text[:80]) 
+
+#convert back to binary. This is just for reference. This part must be done in octave
+#jpg_origianl=base64.b64decode(jpg_as_text)
+
+
