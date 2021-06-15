@@ -65,7 +65,7 @@ else:
     import modules.orp_protocol as orp_protocol
     from modules.orp_protocol import decode_response
     from modules.orp_protocol import encode_request
-
+    from tflite1.TFLite_detection_webcam import detect_object
 #
 # Variables
 #
@@ -191,7 +191,7 @@ while True:
         
         #first creates data type 'vps_shot'
         request = 'create input str vps_shot'
-        encode_and_send(request)
+        encode_and_send(request) 
 
         #send one vps_shot every one minute
         try:
@@ -210,10 +210,19 @@ while True:
         s.close()
         break
 
-    #Users can also type any commend they want. ex) 'create input str vps_shot' can be manually typed.
-    else:        
+    #Users can also type any commend they want in manual mode.  ex) 'create input str vps_shot' can be manually typed.
+    elif request == 'm':         
         # remove trailing whitespace
         request = request.rstrip()
         if request != "":
             packet = encode_request(request)
-               
+    
+    elif request == 'o':
+        request = 'create input str vps_shot'
+        encode_and_send(request) 
+        
+        vps_shot = detect_object()
+        request = 'push str vps_shot 0 {0}'.format(vps_shot)
+        encode_and_send(request)
+        sleep(60)
+
