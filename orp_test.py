@@ -230,8 +230,9 @@ else:
     encode_and_send(request)
     while(1):   
        # get the encoded_string.txt file's information. ~ represents home/pi
+       # MUST BE ABSOLUTE PATH TO BE RUN TO RUN WHEN IT IS BOOTED UP 
        path = '/home/pi/code/mup-aec-pipe/tflite1/encoded_string.txt'
-
+       #path = './tflite1/encoded_string.txt'
        status=os.stat(path)
        print("waiting for new base64 string...") 
     
