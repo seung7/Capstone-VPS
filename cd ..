@@ -1,0 +1,238 @@
+[33mcommit d4c553ec5de245afcb8368ddf8634f99e81b6bcb[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Sun Sep 5 17:22:13 2021 -0700
+
+    Repo Reconstructed
+
+[33mcommit dc78bc3034057e31dabfcd3fed707b52d1138cfb[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Sun Sep 5 17:10:33 2021 -0700
+
+    Repo Reconstructed
+
+[33mcommit 41eff04aca6b73d215e10baf65b27968c54e4b26[m
+Merge: 1c0d363 d70f09b
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Sun Sep 5 16:37:01 2021 -0700
+
+    merge conflict fixed
+
+[33mcommit 1c0d363716d24259d255241e56ac8a4db38c1737[m
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Sun Sep 5 16:22:21 2021 -0700
+
+    due to pull error, the code will be commited
+
+[33mcommit d70f09b6d32ff9028f740b77ab728e12e696e5ed[m
+Author: Raad Khan <raadkhan023@gmail.com>
+Date:   Mon Aug 16 22:06:26 2021 -0700
+
+    debug anomalyDetect calibrating
+
+[33mcommit 1b13b55c065702d8718821a766ee3cffaa15d19d[m
+Author: Raad Khan <raadkhan023@gmail.com>
+Date:   Fri Aug 13 18:07:36 2021 -0700
+
+    update anomalyDetect limits and memory
+
+[33mcommit 29bb0edafe9d80f627b7df109f66482b5bfc02b2[m
+Author: Raad Khan <raadkhan@github.com>
+Date:   Sat Aug 7 14:32:37 2021 -0700
+
+    update anomalyDetect
+
+[33mcommit 7c0ea60c82875894d769a3e5d7d75e205467f268[m
+Author: Raad Khan <raadkhan023@gmail.com>
+Date:   Thu Aug 5 19:30:24 2021 -0700
+
+    complete anomalyDetect and save makeUppercase
+
+[33mcommit 5cfc47e1dd83975ece39be73b91e4c8bd80ba9ba[m
+Author: Raad Khan <raadkhan023@gmail.com>
+Date:   Mon Jul 12 15:15:08 2021 -0700
+
+    set up cloud functions
+
+[33mcommit 9564304bfa2aef88b0ca00ccc13741ee9d803353[m
+Author: Raad Khan <raadkhan@github.com>
+Date:   Mon Jul 12 13:40:33 2021 -0700
+
+    restructure aec
+
+[33mcommit 3134eb2135a9bc4544e75c26d964756fa1c3d9d1[m[33m ([m[1;32mlogging[m[33m)[m
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Fri Jun 25 15:13:51 2021 -0700
+
+    paths are changed to absolute
+
+[33mcommit 517b55e66b89fb6444d21b30c145fdde775100fe[m
+Merge: 3fba9c3 a7b7828
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Wed Jun 23 16:02:32 2021 -0700
+
+    merge conflict fixed
+
+[33mcommit 3fba9c34fcecfc12f06764c73e096e09f84a5bc7[m
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Wed Jun 23 15:46:54 2021 -0700
+
+    code clean up
+
+[33mcommit a7b78289a5464e94c11bfadd25403182243d331e[m
+Author: Raad Khan <raadkhan@github.com>
+Date:   Wed Jun 23 12:29:22 2021 -0700
+
+    light clean up of orp_test
+
+[33mcommit 885c02002c5c96b8cb6db9b8eb8840a8ba7d663d[m
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Sun Jun 20 21:47:49 2021 -0700
+
+    Threshold confidence level for human detection is rasied to 60%
+
+[33mcommit d7bc9173e18d0738c9820d23bcc9c201a8dc09da[m
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Fri Jun 18 17:48:38 2021 -0700
+
+    image size is set to 256x144
+
+[33mcommit 4b810ec9d78e88992433324c883a369214e5ecde[m
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Fri Jun 18 14:41:02 2021 -0700
+
+    Issue fixed. Now program runs continously and waits for new base64 input
+
+[33mcommit d48abf686fc48dec5fbfe3837d64a1485ef9f2bc[m
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Fri Jun 18 01:42:00 2021 -0700
+
+    Pi sends base64 strings to Octave only if a base64 string is updated
+
+[33mcommit e7001ff6acb20263e6ce63a913ff9b0856a7d727[m
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Tue Jun 15 00:33:14 2021 -0700
+
+    webcam.py and orp_test.py can run in seperate terminals
+
+[33mcommit e5d8787b0681973f795cd1b19e98183a87d0336e[m
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Fri Jun 11 22:57:38 2021 -0700
+
+    orp_test.py's code get cleaned. webcam.py needs functionality to pass the base64 argument to orp_test.py
+
+[33mcommit 0c9f0f4d7c13f025a71ac4bcbed27ed6ae686720[m
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Fri Jun 11 16:24:22 2021 -0700
+
+    base64 works in webcam.py. Need to pass the variables to orp_test.py
+
+[33mcommit fc38cb9d5cbb291b9eca689831890dd7eba86d37[m
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Fri Jun 11 14:01:03 2021 -0700
+
+    webcam.py and orp_test.py can run together through bash, read README.md to learn more
+
+[33mcommit dfe5ab85a953bc76d916c20538a41a4cf1b1ca4f[m
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Mon Jun 7 00:15:16 2021 -0700
+
+    no longer need to type argument to run TFLite_detection_webcam.py
+
+[33mcommit 96f1e6d8ab83770464b5db33c8538b1575889761[m
+Author: Seungmin Lee <seungmin.lee777@gmail.com>
+Date:   Sat Jun 5 19:06:49 2021 -0700
+
+    link webcam.py to orp_test.py
+
+[33mcommit ce20dc06355be92b8b33b60c728ff5e2787a2c5e[m
+Author: Seungmin Lee <seungmin.lee777@gmail.com>
+Date:   Sat Jun 5 18:30:32 2021 -0700
+
+    base64 encoding has added to webcam.py
+
+[33mcommit 246aeef3412a00efa123fec984b419d26acdb1e7[m
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Fri Jun 4 21:39:01 2021 -0700
+
+    vps_transmit is deleted
+
+[33mcommit 041ce02764511a96c7604a8439b423cc0618b3a4[m
+Merge: 9ee5de2 31971a4
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Fri Jun 4 21:36:43 2021 -0700
+
+    merge conflict fixed
+
+[33mcommit 31971a4f76d9353b8b1b021f94fad7d3bdb100cf[m
+Author: Raad Khan <raadkhan@github.com>
+Date:   Fri Jun 4 20:14:19 2021 -0700
+
+    implement orp vps client for shooting
+
+[33mcommit cd48713817a7ac5bba02aff701c813939b97f551[m
+Author: Raad Khan <raadkhan023@gmail.com>
+Date:   Mon May 10 20:39:45 2021 -0700
+
+    implement orp vps client for testing
+
+[33mcommit 9ee5de2f3ede15281af789e9ec57a398874d4f5b[m
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Fri Jun 4 19:59:02 2021 -0700
+
+    submodule error has fixed
+
+[33mcommit 7e4318b61f7980c2e8b51840d4581fb99a38833a[m
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Sat May 29 00:35:25 2021 -0700
+
+    TensorFlow Lite Object Detection method and print image when a human is detected
+
+[33mcommit 720c63dfcb4e90276b5f308f501c7add9c8135d3[m
+Merge: b6560ce a1eae3e
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Mon May 24 23:02:05 2021 -0700
+
+    merge conflict fixed, camera test file is added
+
+[33mcommit a1eae3e3ebf4c6e312b337b3b91a44a97fba2591[m
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Wed May 12 17:09:45 2021 -0700
+
+    implemented orp vps client for testing
+
+[33mcommit b6560ced94124cd168fe4f12e9ea71fda78e4043[m
+Merge: 883a037 373de92
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Sat May 15 01:50:09 2021 -0700
+
+    code is organized for orp_test.py
+
+[33mcommit 883a0374b72fe903f2f0383dc6dfa6b718588877[m
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Thu May 13 13:17:34 2021 -0700
+
+    ORP testing code
+
+[33mcommit 373de922a9cca8b1065dc34d9b259a6f52796fe1[m
+Author: Raad Khan <raadkhan023@gmail.com>
+Date:   Mon May 10 20:39:45 2021 -0700
+
+    Send dummy VPS data
+
+[33mcommit 41e9411e942f94c91b594d515b0cafdff52940cc[m
+Author: seung7 <seungmin.lee777@gmail.com>
+Date:   Wed May 12 17:09:45 2021 -0700
+
+    original ORP-test code
+
+[33mcommit 6da26ac704eb569c0459eb43472c8970ee0026ad[m
+Author: Raad Khan <raadkhan023@gmail.com>
+Date:   Mon May 10 20:39:45 2021 -0700
+
+    send dummy VPS data
+
+[33mcommit c3f37ad945aeb339951d05b0c823294592977f1f[m
+Author: Raad Khan <raadkhan023@gmail.com>
+Date:   Mon May 10 17:52:02 2021 -0700
+
+    Initial commit
